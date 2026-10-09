@@ -16,6 +16,7 @@ import com.example.cursobasicoandroid.ui.theme.CursoBasicoAndroidTheme
 import com.example.cursobasicoandroid.composables.TextExample
 import com.example.cursobasicoandroid.composables.ImageExample
 import com.example.cursobasicoandroid.composables.ButtonExample
+import com.example.cursobasicoandroid.composables.ProfileScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,9 +24,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             CursoBasicoAndroidTheme {
-                TextExample("AristiDevs")
-                ImageExample()
-                ButtonExample()
+                ProfileScreen()
+
             }
         }
     }
